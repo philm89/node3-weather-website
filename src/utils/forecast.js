@@ -21,12 +21,9 @@ const forecast = (lat, long, callback) => {
           body.current.temperature +
           ' degress out. The current wind speed is ' +
           body.current.wind_speed +
-          ' KPH.'
-        // temp: body.current.temperature,
-        // windChill: body.current.feelslike,
-        // windSpeed: body.current.wind_speed,
-        // windDir: body.current.wind_dir,
-        // description: body.current.weather_descriptions[0],
+          ' KPH. It feels like it is ' +
+          body.current.feelslike +
+          ' degrees out.'
       );
     }
   });
