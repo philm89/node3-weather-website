@@ -17,7 +17,7 @@ const forecast = (lat, long, callback) => {
       callback(
         undefined,
         body.current.weather_descriptions[0] +
-          ' It is currently ' +
+          '. It is currently ' +
           body.current.temperature +
           ' °C out. The current wind speed is ' +
           body.current.wind_speed +
